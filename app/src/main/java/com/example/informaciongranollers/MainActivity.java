@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button tienda = findViewById(R.id.btBussines);
         tienda.setOnClickListener(this);
+        Button rest = findViewById(R.id.btComida);
+        rest.setOnClickListener(this);
     }
 
 
@@ -27,6 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //Obrim l'activitat 2 amb el Intent
 
             Intent intent = new Intent(this, Businesses.class);  //.class és l'arxiu java compilat
+            startActivity(intent);
+        } else if(b.getId() == R.id.btComida)
+        {
+            Intent intent = new Intent(this, restaruants_activities.class);  //.class és l'arxiu java compilat
             startActivity(intent);
         }
     }
