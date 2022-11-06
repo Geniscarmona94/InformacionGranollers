@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rest.setOnClickListener(this);
     }
 
-//holabb
+
     @Override
     public void onClick(View view) {
         Button b = (Button)view;
