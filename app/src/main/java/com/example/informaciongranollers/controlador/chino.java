@@ -4,9 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.informaciongranollers.R;
 
@@ -17,6 +20,9 @@ import com.example.informaciongranollers.R;
  */
 public class chino extends Fragment {
 
+    TextView tex;
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -25,9 +31,10 @@ public class chino extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    TextView txtSignUp;
     public chino() {
         // Required empty public constructor
+
     }
 
     /**
@@ -45,6 +52,9 @@ public class chino extends Fragment {
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
+
+
+
         return fragment;
     }
 
@@ -55,12 +65,26 @@ public class chino extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        tex=tex.findViewById(R.id.atarasiMap);
+        tex.setMovementMethod(LinkMovementMethod.getInstance());
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        tex=tex.findViewById(R.id.atarasiMap);
+        tex.setMovementMethod(LinkMovementMethod.getInstance());
+
         return inflater.inflate(R.layout.fragment_chino, container, false);
     }
+
+
+
+
+
+
 }

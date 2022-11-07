@@ -6,9 +6,66 @@
     tools:context=".controlador.chino">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+
+        <ImageView
+            android:id="@+id/atarasiImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/atarasi" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATARASSI"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/atarasiImagen"
+            android:id="@+id/atarasititle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: http://www.atarasiisushi.es/"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/atarasiWeb"
+            android:layout_toRightOf="@id/atarasiImagen"
+            android:layout_below="@+id/atarasititle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 689 87 56 85"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/atarasiTelef"
+            android:layout_toRightOf="@id/atarasiImagen"
+            android:layout_below="@+id/atarasiWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_Atarasi"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/atarasiMap"
+            android:layout_toRightOf="@id/atarasiImagen"
+            android:layout_below="@+id/atarasiTelef"/>
+
+
+
+
+
+
+    </RelativeLayout>
 
 </FrameLayout>
