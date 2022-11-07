@@ -20,7 +20,7 @@ import com.example.informaciongranollers.R;
  */
 public class chino extends Fragment {
 
-    TextView tex;
+    //TextView tex;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -66,8 +66,9 @@ public class chino extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        tex=tex.findViewById(R.id.atarasiMap);
-        tex.setMovementMethod(LinkMovementMethod.getInstance());
+        /*TextView tex = null;
+        tex = (TextView) tex.findViewById(R.id.atarasiMap);
+        tex.setMovementMethod(LinkMovementMethod.getInstance());*/
     }
 
 
@@ -76,8 +77,7 @@ public class chino extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        tex=tex.findViewById(R.id.atarasiMap);
-        tex.setMovementMethod(LinkMovementMethod.getInstance());
+
 
         return inflater.inflate(R.layout.fragment_chino, container, false);
     }
