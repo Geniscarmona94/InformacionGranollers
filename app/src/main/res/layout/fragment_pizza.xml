@@ -1,14 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controlador.pizza">
+    tools:context=".controlador.pizza"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
 
-</FrameLayout>
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/lamezzalunaImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/lamezzaluna" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La MEZZA LUNA"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/lamezzalunaImagen"
+            android:id="@+id/lamezzalunatitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: https://lamezzaluna.es/"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/lamezzalunaWeb"
+            android:layout_toRightOf="@id/lamezzalunaImagen"
+            android:layout_below="@+id/lamezzalunatitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 938 79 52 23"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/lamezzalunaTelef"
+            android:layout_toRightOf="@id/lamezzalunaImagen"
+            android:layout_below="@+id/lamezzalunaWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_lamezzaluna"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/atarasiMap"
+            android:layout_toRightOf="@id/lamezzalunaImagen"
+            android:layout_below="@+id/lamezzalunaTelef"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/elitalianoImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/elitaliano"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El Italiano"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/elitalianoImagen"
+            android:id="@+id/elitalianotitle"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: https://www.ubereats.com/es/store/el-italiano/9Jy-zenzST2WE4p-qaSYlA"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/elitalianoWeb"
+            android:layout_toRightOf="@id/elitalianoImagen"
+            android:layout_below="@+id/elitalianotitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 931 29 63 46"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/elitalianoTelef"
+            android:layout_toRightOf="@id/elitalianoImagen"
+            android:layout_below="@+id/elitalianoWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_elitaliano"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/elitalianoMap"
+            android:layout_toRightOf="@id/elitalianoImagen"
+            android:layout_below="@+id/elitalianoTelef"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/ilsaporeImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ilsapore"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Il Sapore"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/ilsaporeImagen"
+            android:id="@+id/ilsaporetitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: http://www.ilsaporeitaliano.es/"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/ilsaporeWeb"
+            android:layout_toRightOf="@id/ilsaporeImagen"
+            android:layout_below="@+id/ilsaporetitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 938 40 15 32"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/ilsaporeTelef"
+            android:layout_toRightOf="@id/ilsaporeImagen"
+            android:layout_below="@+id/ilsaporeWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_ilsapore"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/ilsaporeMap"
+            android:layout_toRightOf="@id/ilsaporeImagen"
+            android:layout_below="@+id/ilsaporeTelef"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/tagliatellaImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/tagli"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tagliatella"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/tagliatellaImagen"
+            android:id="@+id/tagliatellatitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: https://www.latagliatella.es/"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/tagliatellaWeb"
+            android:layout_toRightOf="@id/tagliatellaImagen"
+            android:layout_below="@+id/tagliatellatitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 938 60 48 99"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/taglietellaTelef"
+            android:layout_toRightOf="@id/tagliatellaImagen"
+            android:layout_below="@+id/tagliatellaWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_tagliatella"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/tagliatellaMap"
+            android:layout_toRightOf="@id/tagliatellaImagen"
+            android:layout_below="@+id/taglietellaTelef"/>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
