@@ -11,12 +11,14 @@
         android:id="@+id/btBussines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:text="    Bussines    "/>
     <Button
         android:id="@+id/btComida"
         android:layout_above="@+id/btBussines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:text="Restaurants"/>
 
 </RelativeLayout>

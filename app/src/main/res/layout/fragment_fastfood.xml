@@ -1,14 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controlador.fastfood">
+    tools:context=".controlador.fastfood"
+    android:orientation="vertical">
+    <RelativeLayout
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
 
-</FrameLayout>
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/mcdonalsImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/mcdonals" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="McDonalds"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/mcdonalsImagen"
+            android:id="@+id/mcdonalstitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: https://mcdonalds.es/"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/mcdonalsWeb"
+            android:layout_toRightOf="@id/mcdonalsImagen"
+            android:layout_below="@+id/mcdonalstitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 615 73 65 34"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/mcdonalsTelef"
+            android:layout_toRightOf="@id/mcdonalsImagen"
+            android:layout_below="@+id/mcdonalsWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_mcdonalds"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/mcdonalsMap"
+            android:layout_toRightOf="@id/mcdonalsImagen"
+            android:layout_below="@+id/mcdonalsTelef"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/burgerImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/burger"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burger King"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/burgerImagen"
+            android:id="@+id/burgertitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: https://www.burgerking.es/"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/burgerWeb"
+            android:layout_toRightOf="@id/burgerImagen"
+            android:layout_below="@+id/burgertitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 676 64 51 26"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/burgerTelef"
+            android:layout_toRightOf="@id/burgerImagen"
+            android:layout_below="@+id/burgerWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_burger"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/burgerMap"
+            android:layout_toRightOf="@id/burgerImagen"
+            android:layout_below="@+id/burgerTelef"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/kfcImagen"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/kfc"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KFC"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/kfcImagen"
+            android:id="@+id/kfctitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB: https://www.kfc.es/"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/kfcWeb"
+            android:layout_toRightOf="@id/kfcImagen"
+            android:layout_below="@+id/kfctitle"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 938 79 51 07"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/kfcTelef"
+            android:layout_toRightOf="@id/kfcImagen"
+            android:layout_below="@+id/kfcWeb"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ubicacio_kfc"
+            android:fontFamily="monospace"
+            android:textSize="10dp"
+            android:id="@+id/kfcMap"
+            android:layout_toRightOf="@id/kfcImagen"
+            android:layout_below="@+id/kfcTelef"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
