@@ -205,57 +205,58 @@
             >
 
             <ImageView
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:id="@+id/nuevoPekinImagen"
+                android:id="@+id/autoescolaGranollersImg"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/nuevopekin"
-                />
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/autoescuelaGranollers" />
 
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nuevo Pekin"
+                android:text="Autoescola Granollers"
                 android:fontFamily="monospace"
                 android:textSize="22dp"
-                android:layout_toRightOf="@+id/nuevoPekinImagen"
-                android:id="@+id/nuevoPekintitle"/>
+                android:layout_toRightOf="@+id/autoescolaGranollersImg"
+                android:id="@+id/autoescolaGranollerstitle"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="WEB: https://www.just-eat.es/restaurants-chinonuevopekin/menu"
+                android:text="WEB: https://www.autoescolagranollers.com/"
                 android:fontFamily="monospace"
                 android:textSize="10dp"
-                android:id="@+id/nuevoPekinWeb"
-                android:layout_toRightOf="@id/nuevoPekinImagen"
-                android:layout_below="@+id/nuevoPekintitle"/>
+                android:id="@+id/autoescolaGranollersWeb"
+                android:layout_toRightOf="@id/autoescolaGranollersImg"
+                android:layout_below="@+id/autoescolaGranollerstitle"/>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/autoescolaGranollersTelef"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/autoescolaGranollersWeb"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/autoescolaGranollersImg"
+                android:fontFamily="monospace"
                 android:text="Telefono: 938 46 76 70"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/nuevoPekinTelef"
-                android:layout_toRightOf="@id/nuevoPekinImagen"
-                android:layout_below="@+id/nuevoPekinWeb"/>
+                android:textSize="10dp" />
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/nuevoPekinMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_nuevoPekin"
+                android:layout_below="@+id/autoescolaGranollersTelef"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/autoescolaGranollersImg"
                 android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/nuevoPekinMap"
-                android:layout_toRightOf="@id/nuevoPekinImagen"
-                android:layout_below="@+id/nuevoPekinTelef"/>
+                android:text="@string/Ubicacio_AutoescolaGranollers"
+                android:textSize="10dp" />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
