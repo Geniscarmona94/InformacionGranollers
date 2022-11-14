@@ -25,7 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
-            android:text="Autoescula" />
+            android:text="Autoescula"
+
+
+
+            />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
