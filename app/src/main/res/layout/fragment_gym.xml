@@ -7,7 +7,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragments.AutoescuelaFragment"
+        tools:context=".fragments.gymFragment"
         android:orientation="vertical">
         <!-- TODO: Update blank fragment layout -->
         <RelativeLayout
@@ -21,55 +21,55 @@
             <ImageView
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
-                android:id="@+id/liceuImagen"
+                android:id="@+id/CNGImagen"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/liceu" />
+                android:src="@drawable/cng" />
 
             <TextView
-                android:id="@+id/liceutitle"
+                android:id="@+id/CNGtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@+id/liceuImagen"
+                android:layout_toRightOf="@+id/CNGImagen"
                 android:fontFamily="monospace"
-                android:text="LICEU"
+                android:text="CNGranollers"
                 android:textSize="22dp" />
 
             <TextView
-                android:id="@+id/liceuWeb"
+                android:id="@+id/CNGWeb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/liceutitle"
+                android:layout_below="@+id/CNGtitle"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/liceuImagen"
+                android:layout_toRightOf="@id/CNGImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://autoescuelaliceu.com"
+                android:text="WEB: https://cngranollers.org/"
                 android:textSize="10dp" />
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefono: 678 63 15 64"
+                android:text="Telefono: 938 70 45 99"
                 android:fontFamily="monospace"
                 android:textSize="10dp"
-                android:id="@+id/liceuTelef"
-                android:layout_toRightOf="@id/liceuImagen"
-                android:layout_below="@+id/liceuWeb"/>
+                android:id="@+id/CNGTelef"
+                android:layout_toRightOf="@id/CNGImagen"
+                android:layout_below="@+id/CNGWeb"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_Liceu"
+                android:text="@string/Ubicacio_CNGranollers"
                 android:fontFamily="monospace"
                 android:textSize="10dp"
-                android:id="@+id/liceuMapMap"
-                android:layout_toRightOf="@id/liceuImagen"
-                android:layout_below="@+id/liceuTelef"/>
+                android:id="@+id/CNGMapMap"
+                android:layout_toRightOf="@id/CNGImagen"
+                android:layout_below="@+id/CNGTelef"/>
 
         </RelativeLayout>
         <RelativeLayout
@@ -80,58 +80,58 @@
             >
 
             <ImageView
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:id="@+id/hoyvoyImagen"
+                android:id="@+id/anytimefitnessImagen"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/hoyvoy"
-                />
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/anytimefitness" />
 
             <TextView
-                android:id="@+id/hoyvoytitle"
+                android:id="@+id/anytimefitnesstitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@+id/hoyvoyImagen"
+                android:layout_toRightOf="@+id/anytimefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="Hoy-Voy"
+                android:text="Anytime Fitness"
                 android:textSize="22dp" />
 
             <TextView
-                android:id="@+id/hoyvoyWeb"
+                android:id="@+id/anytimefitnessWeb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/hoyvoytitle"
+                android:layout_below="@+id/anytimefitnesstitle"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/hoyvoyImagen"
+                android:layout_toRightOf="@id/anytimefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://es.hoy-voy.com"
+                android:text="WEB: https://www.anytimefitness.es/gimnasio/sp-0014/gimnasio-granollers-catalu%C3%B1a-granollers/"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/anytimefitnessTelef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anytimefitnessWeb"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/anytimefitnessImagen"
+                android:fontFamily="monospace"
+                android:text="Telefono: 620 80 12 18"
                 android:textSize="10dp" />
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefono: 938 46 77 22"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/hoyvoyTelef"
-                android:layout_toRightOf="@id/hoyvoyImagen"
-                android:layout_below="@+id/hoyvoyWeb"/>
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_HoyVoy"
+                android:text="@string/Ubicacio_anytimefitness"
                 android:fontFamily="monospace"
                 android:textSize="10dp"
                 android:id="@+id/hoyvoyMap"
-                android:layout_toRightOf="@id/hoyvoyImagen"
-                android:layout_below="@+id/hoyvoyTelef"/>
+                android:layout_toRightOf="@id/anytimefitnessImagen"
+                android:layout_below="@+id/anytimefitnessTelef"/>
 
         </RelativeLayout>
         <RelativeLayout
@@ -144,46 +144,46 @@
             <ImageView
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
-                android:id="@+id/soy18Imagen"
+                android:id="@+id/palacefitnessImagen"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/soy18"
+                android:src="@drawable/palacefitness"
                 />
 
             <TextView
-                android:id="@+id/soy18title"
+                android:id="@+id/palacefitnesstitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@+id/soy18Imagen"
+                android:layout_toRightOf="@+id/palacefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="Soy 18"
+                android:text="Palace Fitness"
                 android:textSize="22dp" />
 
             <TextView
-                android:id="@+id/soy18Web"
+                android:id="@+id/palacefitnessWeb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/soy18title"
+                android:layout_below="@+id/palacefitnesstitle"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/soy18Imagen"
+                android:layout_toRightOf="@id/palacefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://www.soy18.com/"
+                android:text="WEB: https://palacefitness.es/"
                 android:textSize="10dp" />
 
             <TextView
-                android:id="@+id/soy18Telef"
+                android:id="@+id/palacefitnessTelef"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/soy18Web"
+                android:layout_below="@+id/palacefitnessWeb"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/soy18Imagen"
+                android:layout_toRightOf="@id/palacefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="Telefono: 932 20 70 16"
+                android:text="Telefono: 679 61 22 94"
                 android:textSize="10dp" />
             <TextView
                 android:layout_marginTop="10dp"
@@ -193,69 +193,8 @@
                 android:fontFamily="monospace"
                 android:textSize="10dp"
                 android:id="@+id/soy18Map"
-                android:layout_toRightOf="@id/soy18Imagen"
-                android:layout_below="@+id/soy18Telef"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            >
-
-            <ImageView
-                android:id="@+id/autoescolaGranollersImg"
-                android:layout_width="180dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                android:src="@drawable/autoesculagranollers" />
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Autoescola Granollers"
-                android:fontFamily="monospace"
-                android:textSize="22dp"
-                android:layout_toRightOf="@+id/autoescolaGranollersImg"
-                android:id="@+id/autoescolaGranollerstitle"/>
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="WEB: https://www.autoescolagranollers.com/"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/autoescolaGranollersWeb"
-                android:layout_toRightOf="@id/autoescolaGranollersImg"
-                android:layout_below="@+id/autoescolaGranollerstitle"/>
-
-            <TextView
-                android:id="@+id/autoescolaGranollersTelef"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/autoescolaGranollersWeb"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/autoescolaGranollersImg"
-                android:fontFamily="monospace"
-                android:text="Telefono: 938 46 76 70"
-                android:textSize="10dp" />
-
-            <TextView
-                android:id="@+id/nuevoPekinMap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/autoescolaGranollersTelef"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/autoescolaGranollersImg"
-                android:fontFamily="monospace"
-                android:text="@string/Ubicacio_AutoescolaGranollers"
-                android:textSize="10dp" />
+                android:layout_toRightOf="@id/palacefitnessImagen"
+                android:layout_below="@+id/palacefitnessTelef"/>
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
