@@ -22,21 +22,20 @@
         android:layout_below="@id/enunciado">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAutoescola"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
-            android:text="Autoescula"
-
-
-
-            />
+            android:text="Autoescuela" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPeluqueria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Peluqueria" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGYM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GYM"

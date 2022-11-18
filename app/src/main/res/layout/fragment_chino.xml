@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     tools:context=".controlador.chino"
     android:orientation="vertical">
-//a
+
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
 
