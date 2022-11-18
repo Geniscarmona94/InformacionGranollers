@@ -23,6 +23,7 @@ public class chino extends Fragment {
     //TextView tex;
 
 
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -67,8 +68,9 @@ public class chino extends Fragment {
         }
 
         /*TextView tex = null;
-        tex = (TextView) tex.findViewById(R.id.atarasiMap);
+        tex = getActivity().getApplicationContext().;
         tex.setMovementMethod(LinkMovementMethod.getInstance());*/
+        
     }
 
 
@@ -76,10 +78,12 @@ public class chino extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View view=inflater.inflate(R.layout.fragment_chino, container, false);
 
 
 
-        return inflater.inflate(R.layout.fragment_chino, container, false);
+
+        return view;
     }
 
 
