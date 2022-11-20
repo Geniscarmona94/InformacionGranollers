@@ -15,17 +15,17 @@ import android.widget.TextView;
 
 import com.example.informaciongranollers.R;
 
-public class AutoescuelaFragment extends Fragment implements View.OnClickListener {
+public class autoescuela extends Fragment implements View.OnClickListener {
 
     TextView telefonoLiceu;
 
-    public AutoescuelaFragment() {
+    public autoescuela() {
         // Required empty public constructor
     }
 
 
-    public static AutoescuelaFragment newInstance() {
-        AutoescuelaFragment fragment = new AutoescuelaFragment();
+    public static autoescuela newInstance() {
+        autoescuela fragment = new autoescuela();
         return fragment;
     }
 

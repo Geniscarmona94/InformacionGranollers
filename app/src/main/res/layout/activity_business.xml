@@ -4,49 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".restaruants_activities"
+    tools:context=".activity_business"
     android:orientation="vertical">
-
     <TextView
-        android:id="@+id/restaurants"
+        android:id="@+id/business"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Restaurants"
+        android:text="Business"
         android:textSize="40sp"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"/>
+
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItaliano"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Italiano"
-            android:icon="@drawable/ic_action_pizza"
-            />
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabChino"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Asiatico"
-            android:icon="@drawable/ic_action_chino"
-            />
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabFastFood"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FASTFOOD"
-            android:icon="@drawable/ic_action_burger"
 
-            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabautoescuela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autoescuelas"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabpeluqueria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peluquerias"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabgym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GYM"/>
     </com.google.android.material.tabs.TabLayout>
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
 
 </LinearLayout>

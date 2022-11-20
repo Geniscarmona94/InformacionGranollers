@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.informaciongranollers.R;
 
-public class gymFragment extends Fragment {
+public class gym extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

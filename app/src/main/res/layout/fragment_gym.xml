@@ -7,7 +7,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragments.gymFragment"
+        tools:context=".fragments.gym"
         android:orientation="vertical">
         <!-- TODO: Update blank fragment layout -->
         <RelativeLayout
@@ -185,16 +185,17 @@
                 android:fontFamily="monospace"
                 android:text="Telefono: 679 61 22 94"
                 android:textSize="10dp" />
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/palacefitnessMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_Soy18"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/soy18Map"
+                android:layout_below="@+id/palacefitnessTelef"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/palacefitnessImagen"
-                android:layout_below="@+id/palacefitnessTelef"/>
+                android:fontFamily="monospace"
+                android:text="@string/Ubicacio_palacefitness"
+                android:textSize="10dp" />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

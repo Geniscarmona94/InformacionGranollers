@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (b.getId() == R.id.btBussines ) {
             //Obrim l'activitat 2 amb el Intent
 
-            Intent intent = new Intent(this, Businesses.class);  //.class és l'arxiu java compilat
+            Intent intent = new Intent(this, activity_business.class);  //.class és l'arxiu java compilat
             startActivity(intent);
         } else if(b.getId() == R.id.btComida)
         {
