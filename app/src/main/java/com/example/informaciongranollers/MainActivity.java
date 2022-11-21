@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bussines.setOnClickListener(this);
         ImageButton restaurants = findViewById(R.id.imgRestaurants);
         restaurants.setOnClickListener(this);
+        ImageButton transport = findViewById(R.id.imgTransport);
+        transport.setOnClickListener(this);
+        ImageButton parking = findViewById(R.id.imgParking);
+        parking.setOnClickListener(this);
     }
 
 
@@ -35,6 +39,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if(b.getId() == R.id.imgRestaurants)
         {
             Intent intent = new Intent(this, restaruants_activities.class);  //.class és l'arxiu java compilat
+            startActivity(intent);
+        }else if(b.getId() == R.id.imgTransport)
+        {
+            Intent intent = new Intent(this, transport.class);  //.class és l'arxiu java compilat
+            startActivity(intent);
+        }else if(b.getId() == R.id.imgParking)
+        {
+            Intent intent = new Intent(this, parking.class);  //.class és l'arxiu java compilat
             startActivity(intent);
         }
     }
