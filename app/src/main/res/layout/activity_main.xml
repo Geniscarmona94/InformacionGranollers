@@ -4,21 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:gravity="center">
 
 
-    <Button
+   <!-- <Button
         android:id="@+id/btBussines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="    Bussines    "/>
+
     <Button
         android:id="@+id/btComida"
-        android:layout_above="@+id/btBussines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btBussines"
         android:layout_centerInParent="true"
-        android:text="Restaurants"/>
+        android:text="Restaurants" />-->
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/restaurants"
+        android:id="@+id/imgRestaurants"
+       />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/business"
+        android:id="@+id/imgBussines"
+        android:layout_below="@id/imgRestaurants"
+
+        />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/parking"
+        android:id="@+id/imgParking"
+        android:layout_toRightOf="@id/imgRestaurants"
+        />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/transport"
+        android:id="@+id/imgTransport"
+        android:layout_below="@id/imgRestaurants"
+        android:layout_toRightOf="@id/imgRestaurants"
+        />
+
 
 </RelativeLayout>
