@@ -26,4 +26,5 @@
     <string name="Ubicacio_elsot"><a href="https://www.google.com/maps?q=parquing+el+sot+granollers&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwiJm7_qmcD7AhVXU6QEHZKgDWAQ_AUoAXoECAIQAw">Ubicació El Sot</a></string>
     <string name="Ubicacio_corona"><a href="https://www.google.com/maps?q=Parking+Corona+(Grup+PBlaus)&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjfte6qm8D7AhVhVqQEHcFPCQsQ_AUoAXoECAEQAw">Ubicacio Corona Parquing</a></string>
     <string name="Ubicacio_atenea"><a href="https://www.google.com/maps/place/Parking+Estacio+Atenea+(Pblaus)/@41.600203,2.285972,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4c7c224ec36b9:0x3fc8c61c3b78f277!8m2!3d41.600203!4d2.2881607">Ubicacio Atenea </a></string>
+    <string name="benvinguda">Benvinguts Granollerins!!</string>
 </resources>

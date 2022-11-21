@@ -5,53 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="center">
+    >
 
 
-   <!-- <Button
-        android:id="@+id/btBussines"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="    Bussines    "/>
+   <TextView
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/benvinguda"
+       android:id="@+id/benvinguda"
+       android:textSize="30dp"
+       android:gravity="center"
 
-    <Button
-        android:id="@+id/btComida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btBussines"
-        android:layout_centerInParent="true"
-        android:text="Restaurants" />-->
-
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/restaurants"
-        android:id="@+id/imgRestaurants"
        />
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/business"
-        android:id="@+id/imgBussines"
-        android:layout_below="@id/imgRestaurants"
 
-        />
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/parking"
-        android:id="@+id/imgParking"
-        android:layout_toRightOf="@id/imgRestaurants"
-        />
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/transport"
-        android:id="@+id/imgTransport"
-        android:layout_below="@id/imgRestaurants"
-        android:layout_toRightOf="@id/imgRestaurants"
-        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/benvinguda"
+        android:gravity="center"
+        >
+
+        <ImageButton
+
+            android:id="@+id/imgRestaurants"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/restaurants"
+            android:layout_margin="10dp"/>
+
+        <ImageButton
+            android:id="@+id/imgBussines"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/imgRestaurants"
+            android:src="@drawable/business"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imgParking"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/imgRestaurants"
+            android:layout_margin="10dp"
+
+            android:src="@drawable/parking" />
+
+        <ImageButton
+            android:id="@+id/imgTransport"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/imgRestaurants"
+            android:layout_toRightOf="@id/imgRestaurants"
+            android:layout_margin="10dp"
+            android:src="@drawable/transport" />
+    </RelativeLayout>
+
 
 
 </RelativeLayout>
