@@ -10,6 +10,7 @@
         tools:context=".fragments.autoescuela"
         android:orientation="vertical">
         <!-- TODO: Update blank fragment layout -->
+
         <RelativeLayout
 
             android:layout_width="match_parent"
@@ -19,8 +20,6 @@
             >
 
             <ImageView
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
                 android:id="@+id/liceuImagen"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
@@ -28,6 +27,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/liceu" />
 
             <TextView
@@ -40,49 +41,78 @@
                 android:text="LICEU"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/liceuWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/liceutitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/liceuImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://autoescuelaliceu.com"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb"
+                android:text="WEB: https://autoescuelaliceu.com" />
 
             <TextView
-                android:id="@+id/liceuTelef"
+                android:id="@+id/liceuWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/liceutitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/liceuWeb"
+                android:text="Web Liceu"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/liceuTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/liceuWeb"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/liceuImagen"
                 android:fontFamily="monospace"
-                android:text="Telefono: 678 63 15 64"
-                android:textSize="10dp" />
+                android:src="@drawable/iconotelefono"
+                android:text="Telefono: 678 63 15 64" />
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/liceuTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_Liceu"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/liceuMapMap"
+                android:layout_below="@+id/liceuWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/liceuTelef"
+                android:text="Telèfon Liceu"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/liceuMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/liceuTelef"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/liceuImagen"
-                android:layout_below="@+id/liceuTelef"/>
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion" />
+
+            <TextView
+                android:id="@+id/liceuMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liceuTelef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/liceuMap"
+                android:text="Ubicació Liceu"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
 
         </RelativeLayout>
         <RelativeLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             >
 
             <ImageView
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
                 android:id="@+id/hoyvoyImagen"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
@@ -90,8 +120,9 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/hoyvoy"
-                />
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/hoyvoy" />
 
             <TextView
                 android:id="@+id/hoyvoytitle"
@@ -103,48 +134,77 @@
                 android:text="Hoy-Voy"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/hoyvoyWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/hoyvoytitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/hoyvoyImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://es.hoy-voy.com"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb"/>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/hoyvoyWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefono: 938 46 77 22"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
+                android:layout_below="@+id/hoyvoytitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/hoyvoyWeb"
+                android:text="Web Hoy-Voy"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
                 android:id="@+id/hoyvoyTelef"
-                android:layout_toRightOf="@id/hoyvoyImagen"
-                android:layout_below="@+id/hoyvoyWeb"/>
-            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/hoyvoyWeb"
                 android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/hoyvoyImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconotelefono"/>
+
+            <TextView
+                android:id="@+id/hoyvoyTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_HoyVoy"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
+                android:layout_below="@+id/hoyvoyWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/hoyvoyTelef"
+                android:text="Telèfon Hoy-Voy"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
                 android:id="@+id/hoyvoyMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/hoyvoyTelef"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/hoyvoyImagen"
-                android:layout_below="@+id/hoyvoyTelef"/>
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion" />
+
+            <TextView
+                android:id="@+id/hoyvoyMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hoyvoyTelef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/hoyvoyMap"
+                android:text="Ubicació Hoy-Voy"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
 
         </RelativeLayout>
         <RelativeLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             >
 
             <ImageView
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
                 android:id="@+id/soy18Imagen"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
@@ -152,8 +212,9 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/soy18"
-                />
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/soy18" />
 
             <TextView
                 android:id="@+id/soy18title"
@@ -165,43 +226,75 @@
                 android:text="Soy 18"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/soy18Web"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/soy18title"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/soy18Imagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://www.soy18.com/"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb"/>
 
             <TextView
-                android:id="@+id/soy18Telef"
+                android:id="@+id/soy18WebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/soy18title"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/soy18Web"
+                android:text="Web Soy18"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/soy18Telef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/soy18Web"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/soy18Imagen"
                 android:fontFamily="monospace"
-                android:text="Telefono: 932 20 70 16"
-                android:textSize="10dp" />
+                android:src="@drawable/iconotelefono"/>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/soy18TelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_Soy18"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
+                android:layout_below="@+id/soy18Web"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/soy18Telef"
+                android:text="Telèfon Soy18"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
                 android:id="@+id/soy18Map"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconoubicacion"
+                android:fontFamily="monospace"
                 android:layout_toRightOf="@id/soy18Imagen"
-                android:layout_below="@+id/soy18Telef"/>
+                android:layout_below="@+id/soy18Telef"
+                />
+
+            <TextView
+                android:id="@+id/soy18MapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/soy18Telef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/soy18Map"
+                android:text="Ubicació Soy18"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
         </RelativeLayout>
         <RelativeLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             >
 
             <ImageView
@@ -225,38 +318,70 @@
                 android:textSize="22dp"
                 android:layout_toRightOf="@+id/autoescolaGranollersImg"
                 android:id="@+id/autoescolaGranollerstitle"/>
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="WEB: https://www.autoescolagranollers.com/"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
+
+            <ImageView
                 android:id="@+id/autoescolaGranollersWeb"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/autoescolaGranollerstitle"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/autoescolaGranollersImg"
-                android:layout_below="@+id/autoescolaGranollerstitle"/>
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoweb"/>
 
             <TextView
-                android:id="@+id/autoescolaGranollersTelef"
+                android:id="@+id/autoescolaGranollersWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/autoescolaGranollerstitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/autoescolaGranollersWeb"
+                android:text="Web Autoescola Granollers"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/autoescolaGranollersTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/autoescolaGranollersWeb"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/autoescolaGranollersImg"
                 android:fontFamily="monospace"
-                android:text="Telefono: 938 46 76 70"
-                android:textSize="10dp" />
+                android:src="@drawable/iconotelefono"/>
 
             <TextView
-                android:id="@+id/nuevoPekinMap"
+                android:id="@+id/autoescolaGranollersTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/autoescolaGranollersWeb"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/autoescolaGranollersTelef"
+                android:text="Telèfon Autoescola Granollers"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/autoescolaGranollersMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/autoescolaGranollersTelef"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/autoescolaGranollersImg"
                 android:fontFamily="monospace"
-                android:text="@string/Ubicacio_AutoescolaGranollers"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoubicacion" />
+
+            <TextView
+                android:id="@+id/autoescolaGranollersMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoescolaGranollersTelef"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/autoescolaGranollersMap"
+                android:text="Ubicació Autoescola Granollers"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
