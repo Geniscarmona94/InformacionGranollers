@@ -15,16 +15,24 @@
         tools:targetApi="31">
         <activity
             android:name=".transport"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
         <activity
             android:name=".parking"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
         <activity
             android:name=".activity_business"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
         <activity
             android:name=".restaruants_activities"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

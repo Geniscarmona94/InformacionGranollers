@@ -17,7 +17,7 @@
         android:paddingTop="10dp"/>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tablayout"
+        android:id="@+id/tablayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -25,21 +25,24 @@
             android:id="@+id/tabautoescuela"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:icon="@drawable/imgautoescuela"
             android:text="Autoescuelas"/>
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabpeluqueria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:icon="@drawable/tijeras"
             android:text="Peluquerias"/>
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabgym"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:icon="@drawable/gym"
             android:text="GYM"/>
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
+        android:id="@+id/viewpager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -18,8 +18,8 @@ public class activity_business extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_business);
-        tabLayout = findViewById(R.id.tabLayout);
-        viewPager = findViewById(R.id.viewpager);
+        tabLayout = findViewById(R.id.tablayout2);
+        viewPager = findViewById(R.id.viewpager2);
 
         tab1 = findViewById(R.id.tabautoescuela);
         tab2 = findViewById(R.id.tabpeluqueria);

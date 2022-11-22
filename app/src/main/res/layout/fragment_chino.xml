@@ -20,8 +20,6 @@
         >
 
         <ImageView
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"
             android:id="@+id/atarasiImagen"
             android:layout_width="180dp"
             android:layout_height="150dp"
@@ -29,6 +27,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/atarasi" />
 
         <TextView
@@ -40,43 +40,74 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/atarasiImagen"
             android:id="@+id/atarasititle"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WEB: http://www.atarasiisushi.es/"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+
+        <ImageView
             android:id="@+id/atarasiWeb"
-            android:layout_toRightOf="@id/atarasiImagen"
-            android:layout_below="@+id/atarasititle"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/atarasititle"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/atarasiImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
+        <TextView
+            android:id="@+id/atarasiWebString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Telefono: 689 87 56 85"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/atarasititle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/atarasiWeb"
+            android:text="Web Atarassi"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
             android:id="@+id/atarasiTelef"
-            android:layout_toRightOf="@id/atarasiImagen"
-            android:layout_below="@+id/atarasiWeb"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/atarasiWeb"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/atarasiImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/atarasiTelefString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Ubicacio_Atarasi"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/atarasiWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/atarasiTelef"
+            android:text="Telèfon Atarassi"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <ImageView
             android:id="@+id/atarasiMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/atarasiTelef"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/atarasiImagen"
-            android:layout_below="@+id/atarasiTelef"/>
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion"/>
+
+        <TextView
+            android:id="@+id/atarasiMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atarasiTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/atarasiMap"
+            android:text="Ubiació Atarassi"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
 
     </RelativeLayout>
     <RelativeLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         >
 
         <ImageView
@@ -89,55 +120,86 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/wagaya"
-            />
+            android:src="@drawable/wagaya"/>
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:id="@+id/wagayatitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="WAGAYA"
-            android:fontFamily="monospace"
-            android:textSize="22dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/wagayaImagen"
-            android:id="@+id/wagayatitle"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WEB: https://www.wagaya.es/"
             android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:text="WAGAYA"
+            android:textSize="22dp"/>
+
+        <ImageView
             android:id="@+id/wagayaWeb"
-            android:layout_toRightOf="@id/wagayaImagen"
-            android:layout_below="@+id/wagayatitle"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/wagayatitle"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/wagayaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb" />
+
+        <TextView
+            android:id="@+id/wagayaWebString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Telefono: 931 58 34 81"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/wagayatitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/wagayaWeb"
+            android:text="Web Wagaya"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
             android:id="@+id/wagayaTelef"
-            android:layout_toRightOf="@id/wagayaImagen"
-            android:layout_below="@+id/wagayaWeb"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/wagayaWeb"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/wagayaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono" />
+
+        <TextView
+            android:id="@+id/wagayaTelefString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Ubicacio_Wagaya"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/wagayaWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/wagayaTelef"
+            android:text="Telèfon Wagaya"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
             android:id="@+id/wagayaMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/wagayaTelef"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/wagayaImagen"
-            android:layout_below="@+id/wagayaTelef"/>
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion" />
+
+        <TextView
+            android:id="@+id/wagayaMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wagayaTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/wagayaMap"
+            android:text="Ubiació Wagaya"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
 
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         >
 
         <ImageView
@@ -162,42 +224,76 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/solNaixentImagen"
             android:id="@+id/solNAixenttitle"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WEB: https://solnaixent.es/"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+
+        <ImageView
             android:id="@+id/solNaixentWeb"
-            android:layout_toRightOf="@id/solNaixentImagen"
-            android:layout_below="@+id/solNAixenttitle"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/solNAixenttitle"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/solNaixentImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
+        <TextView
+            android:id="@+id/solNaixentWebString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Telefono: 938 79 51 07"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/solNAixenttitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/solNaixentWeb"
+            android:text="Web Sol Naixent"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
             android:id="@+id/solNaixentTelef"
-            android:layout_toRightOf="@id/solNaixentImagen"
-            android:layout_below="@+id/solNaixentWeb"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/solNaixentWeb"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/solNaixentImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/solNaixentTelefString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Ubicacio_solNaixent"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/solNaixentWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/solNaixentTelef"
+            android:text="Telèfon Sol Naixent"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
             android:id="@+id/solNaixentMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iconoubicacion"
+            android:fontFamily="monospace"
             android:layout_toRightOf="@id/solNaixentImagen"
-            android:layout_below="@+id/solNaixentTelef"/>
+            android:layout_below="@+id/solNaixentTelef"
+            />
+
+        <TextView
+            android:id="@+id/solNaixentMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/solNaixentTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/solNaixentMap"
+            android:text="Ubiació Sol Naixent"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         >
 
         <ImageView
@@ -222,36 +318,69 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/nuevoPekinImagen"
             android:id="@+id/nuevoPekintitle"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WEB: https://www.just-eat.es/restaurants-chinonuevopekin/menu"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+
+        <ImageView
             android:id="@+id/nuevoPekinWeb"
-            android:layout_toRightOf="@id/nuevoPekinImagen"
-            android:layout_below="@+id/nuevoPekintitle"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/nuevoPekintitle"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/nuevoPekinImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+        <TextView
+            android:id="@+id/nuevoPekinWebString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Telefono: 938 46 76 70"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/nuevoPekintitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/nuevoPekinWeb"
+            android:text="Web Nuevo Pekin"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
             android:id="@+id/nuevoPekinTelef"
-            android:layout_toRightOf="@id/nuevoPekinImagen"
-            android:layout_below="@+id/nuevoPekinWeb"/>
-        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/nuevoPekinWeb"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/nuevoPekinImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/nuevoPekinTelefString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Ubicacio_nuevoPekin"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
+            android:layout_below="@+id/nuevoPekinWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/nuevoPekinTelef"
+            android:text="Telèfon Nuevo Pekin"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
             android:id="@+id/nuevoPekinMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/nuevoPekinTelef"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/nuevoPekinImagen"
-            android:layout_below="@+id/nuevoPekinTelef"/>
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion" />
+
+        <TextView
+            android:id="@+id/nuevoPekinMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nuevoPekinTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/nuevoPekinMap"
+            android:text="Ubiació Nuevo Pekin"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
     </RelativeLayout>
 </LinearLayout>
 </ScrollView>
