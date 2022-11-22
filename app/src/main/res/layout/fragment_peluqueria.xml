@@ -10,6 +10,7 @@
         tools:context=".fragments.peluqueria"
         android:orientation="vertical">
         <!-- TODO: Update blank fragment layout -->
+
         <RelativeLayout
 
             android:layout_width="match_parent"
@@ -40,43 +41,73 @@
                 android:text="Aduho"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/aduhoWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/aduhotitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/aduhoImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://aduho.com/"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb"/>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/aduhoWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefono: 938 70 14 87"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
+                android:layout_below="@+id/aduhotitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/aduhoWeb"
+                android:text="Web aduho"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
                 android:id="@+id/aduhoTelef"
-                android:layout_toRightOf="@id/aduhoImagen"
-                android:layout_below="@+id/aduhoWeb"/>
-            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/aduhoWeb"
                 android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/aduhoImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconotelefono"/>
+
+            <TextView
+                android:id="@+id/aduhoTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_aduho"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/aduhoMapMap"
+                android:layout_below="@+id/aduhoWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/aduhoTelef"
+                android:text="Telèfon aduho"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/aduhoMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/aduhoTelef"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/aduhoImagen"
-                android:layout_below="@+id/aduhoTelef"/>
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion" />
+
+            <TextView
+                android:id="@+id/aduhoMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aduhoTelef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/aduhoMap"
+                android:text="Ubicació aduho"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
 
         </RelativeLayout>
         <RelativeLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             >
 
             <ImageView
@@ -99,47 +130,76 @@
                 android:layout_toRightOf="@+id/elsalonImagen"
                 android:fontFamily="monospace"
                 android:text="El Salon Estilistes"
-                android:textSize="22dp" />
+                android:textSize="18dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/elsalonWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/elsalontitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/elsalonImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://elsalon.netlify.app/"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb"/>
 
             <TextView
-                android:id="@+id/elsalonTelef"
+                android:id="@+id/elsalonWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/elsalontitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/elsalonWeb"
+                android:text="Web El Salon Estilistes"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/elsalonTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/elsalonWeb"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/elsalonImagen"
                 android:fontFamily="monospace"
-                android:text="Telefono: 938 44 33 39"
-                android:textSize="10dp" />
+                android:src="@drawable/iconotelefono"/>
 
             <TextView
-                android:id="@+id/elsalonMap"
+                android:id="@+id/elsalonTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/elsalonWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/elsalonTelef"
+                android:text="Telèfon El Salon Estilistes"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/elsalonMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/elsalonTelef"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/elsalonImagen"
                 android:fontFamily="monospace"
-                android:text="@string/Ubicacio_elsalon"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoubicacion" />
+
+            <TextView
+                android:id="@+id/elsalonMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/elsalonTelef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/elsalonMap"
+                android:text="Ubicació El Salon Estilistes"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
 
         </RelativeLayout>
         <RelativeLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             >
 
             <ImageView
@@ -164,37 +224,70 @@
                 android:text="URBAN BEAUTY"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/urbanbeautyWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/urbanbeautytitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/urbanbeautyImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://www.urbanbeautygranollers.com/"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb"/>
 
             <TextView
-                android:id="@+id/urbanbeautyTelef"
+                android:id="@+id/urbanbeautyWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/urbanbeautytitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/urbanbeautyWeb"
+                android:text="Web Urban Beauty"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/urbanbeautyTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/urbanbeautyWeb"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/urbanbeautyImagen"
                 android:fontFamily="monospace"
-                android:text="Telefono: 938 79 31 75"
-                android:textSize="10dp" />
+                android:src="@drawable/iconotelefono"/>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/urbanbeautyTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_urbanbeauty"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
+                android:layout_below="@+id/urbanbeautyWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/urbanbeautyTelef"
+                android:text="Telèfon Urban Beauty"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
                 android:id="@+id/urbanbeautyMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconoubicacion"
+                android:fontFamily="monospace"
                 android:layout_toRightOf="@id/urbanbeautyImagen"
-                android:layout_below="@+id/urbanbeautyTelef"/>
+                android:layout_below="@+id/urbanbeautyTelef"
+                />
+
+            <TextView
+                android:id="@+id/urbanbeautyMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/urbanbeautyTelef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/urbanbeautyMap"
+                android:text="Ubicació Urban Beauty"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

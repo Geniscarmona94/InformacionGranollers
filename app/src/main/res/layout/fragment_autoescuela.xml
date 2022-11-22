@@ -49,8 +49,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/liceuImagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconoweb"
-                android:text="WEB: https://autoescuelaliceu.com" />
+                android:src="@drawable/iconoweb"/>
 
             <TextView
                 android:id="@+id/liceuWebString"
@@ -71,8 +70,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/liceuImagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconotelefono"
-                android:text="Telefono: 678 63 15 64" />
+                android:src="@drawable/iconotelefono"/>
 
             <TextView
                 android:id="@+id/liceuTelefString"
@@ -142,7 +140,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/hoyvoyImagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconoweb"/>
+                android:src="@drawable/iconoweb" />
 
             <TextView
                 android:id="@+id/hoyvoyWebString"
@@ -163,7 +161,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/hoyvoyImagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconotelefono"/>
+                android:src="@drawable/iconotelefono" />
 
             <TextView
                 android:id="@+id/hoyvoyTelefString"
@@ -234,7 +232,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/soy18Imagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconoweb"/>
+                android:src="@drawable/iconoweb" />
 
             <TextView
                 android:id="@+id/soy18WebString"
@@ -255,7 +253,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/soy18Imagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconotelefono"/>
+                android:src="@drawable/iconotelefono" />
 
             <TextView
                 android:id="@+id/soy18TelefString"
@@ -310,14 +308,14 @@
                 android:src="@drawable/autoesculagranollers" />
 
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/autoescolaGranollerstitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Autoescola Granollers"
-                android:fontFamily="monospace"
-                android:textSize="22dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/autoescolaGranollersImg"
-                android:id="@+id/autoescolaGranollerstitle"/>
+                android:fontFamily="monospace"
+                android:text="Autoescola Granollers"
+                android:textSize="16dp" />
 
             <ImageView
                 android:id="@+id/autoescolaGranollersWeb"
@@ -327,14 +325,14 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/autoescolaGranollersImg"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconoweb"/>
+                android:src="@drawable/iconoweb" />
 
             <TextView
                 android:id="@+id/autoescolaGranollersWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/autoescolaGranollerstitle"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_toRightOf="@id/autoescolaGranollersWeb"
                 android:text="Web Autoescola Granollers"
                 android:textColor="@android:color/white"
@@ -348,7 +346,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/autoescolaGranollersImg"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconotelefono"/>
+                android:src="@drawable/iconotelefono" />
 
             <TextView
                 android:id="@+id/autoescolaGranollersTelefString"

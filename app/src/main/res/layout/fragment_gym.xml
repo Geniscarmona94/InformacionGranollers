@@ -10,6 +10,7 @@
         tools:context=".fragments.gym"
         android:orientation="vertical">
         <!-- TODO: Update blank fragment layout -->
+
         <RelativeLayout
 
             android:layout_width="match_parent"
@@ -17,6 +18,7 @@
             android:id="@+id/relative1"
             android:layout_marginBottom="10dp"
             >
+
 
             <ImageView
                 android:scaleType="fitXY"
@@ -40,43 +42,73 @@
                 android:text="CNGranollers"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/CNGWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/CNGtitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/CNGImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://cngranollers.org/"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb"/>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/CNGWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefono: 938 70 45 99"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
+                android:layout_below="@+id/CNGtitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/CNGWeb"
+                android:text="Web CNGranollers"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
                 android:id="@+id/CNGTelef"
-                android:layout_toRightOf="@id/CNGImagen"
-                android:layout_below="@+id/CNGWeb"/>
-            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/CNGWeb"
                 android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/CNGImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconotelefono"/>
+
+            <TextView
+                android:id="@+id/CNGTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_CNGranollers"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/CNGMapMap"
+                android:layout_below="@+id/CNGWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/CNGTelef"
+                android:text="Telèfon CNGranollers"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/CNGMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/CNGTelef"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/CNGImagen"
-                android:layout_below="@+id/CNGTelef"/>
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion" />
+
+            <TextView
+                android:id="@+id/CNGMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CNGTelef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/CNGMap"
+                android:text="Ubicació CNGranollers"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
 
         </RelativeLayout>
         <RelativeLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             >
 
             <ImageView
@@ -101,49 +133,76 @@
                 android:text="Anytime Fitness"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/anytimefitnessWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/anytimefitnesstitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/anytimefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://www.anytimefitness.es/gimnasio/sp-0014/gimnasio-granollers-catalu%C3%B1a-granollers/"
-                android:textSize="10dp" />
-
+                android:src="@drawable/iconoweb"/>
             <TextView
-                android:id="@+id/anytimefitnessTelef"
+                android:id="@+id/anytimefitnessWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/anytimefitnesstitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/anytimefitnessWeb"
+                android:text="Web Anytime Fitness"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/anytimefitnessTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/anytimefitnessWeb"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/anytimefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="Telefono: 620 80 12 18"
-                android:textSize="10dp" />
+                android:src="@drawable/iconotelefono"/>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:id="@+id/anytimefitnessTelefString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Ubicacio_anytimefitness"
-                android:fontFamily="monospace"
-                android:textSize="10dp"
-                android:id="@+id/hoyvoyMap"
+                android:layout_below="@+id/anytimefitnessWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/anytimefitnessTelef"
+                android:text="Telèfon Anytime Fitness"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/anytimefitnessMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/anytimefitnessTelef"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/anytimefitnessImagen"
-                android:layout_below="@+id/anytimefitnessTelef"/>
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion" />
+
+            <TextView
+                android:id="@+id/anytimefitnessMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anytimefitnessTelef"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/anytimefitnessMap"
+                android:text="Ubicació Anytime Fitness"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
 
         </RelativeLayout>
         <RelativeLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             >
 
             <ImageView
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
                 android:id="@+id/palacefitnessImagen"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
@@ -151,8 +210,9 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/palacefitness"
-                />
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/palacefitness" />
 
             <TextView
                 android:id="@+id/palacefitnesstitle"
@@ -164,38 +224,70 @@
                 android:text="Palace Fitness"
                 android:textSize="22dp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/palacefitnessWeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/palacefitnesstitle"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/palacefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="WEB: https://palacefitness.es/"
-                android:textSize="10dp" />
+                android:src="@drawable/iconoweb" />
 
             <TextView
-                android:id="@+id/palacefitnessTelef"
+                android:id="@+id/palacefitnessWebString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/palacefitnesstitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/palacefitnessWeb"
+                android:text="Web Palace Fitness"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/palacefitnessTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/palacefitnessWeb"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/palacefitnessImagen"
                 android:fontFamily="monospace"
-                android:text="Telefono: 679 61 22 94"
-                android:textSize="10dp" />
+                android:src="@drawable/iconotelefono" />
 
             <TextView
+                android:id="@+id/palacefitnessTelefString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/palacefitnessWeb"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/palacefitnessTelef"
+                android:text="Telèfon Palace Fitness"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
                 android:id="@+id/palacefitnessMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconoubicacion"
+                android:fontFamily="monospace"
+                android:layout_toRightOf="@id/palacefitnessImagen"
+                android:layout_below="@+id/palacefitnessTelef"
+                />
+
+            <TextView
+                android:id="@+id/palacefitnessMapString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/palacefitnessTelef"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/palacefitnessImagen"
-                android:fontFamily="monospace"
-                android:text="@string/Ubicacio_palacefitness"
-                android:textSize="10dp" />
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/palacefitnessMap"
+                android:text="Ubicació Palace Fitness"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

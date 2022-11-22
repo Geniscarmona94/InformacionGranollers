@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">InformacionGranollers</string>
+    <string name="app_name">Informació Granollers</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Ubicacio_Atarasi"><a href="https://www.google.com/maps/place/Restaurant+Atarasii/@41.6098489,2.2872166,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4c75e807f0365:0x48b5c16f2eb91816!8m2!3d41.6098489!4d2.2894053?hl=ca">Ubicacio Atarasi</a></string>
