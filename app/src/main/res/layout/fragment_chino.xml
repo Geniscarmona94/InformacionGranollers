@@ -100,9 +100,9 @@
             android:layout_below="@+id/atarasiTelef"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/atarasiMap"
-            android:text="Ubiació Atarassi"
+            android:text="Ubicació Atarassi"
             android:textColor="@android:color/white"
-            android:textSize="12dp"/>
+            android:textSize="12dp" />
 
     </RelativeLayout>
     <RelativeLayout
@@ -191,7 +191,7 @@
             android:layout_below="@+id/wagayaTelef"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/wagayaMap"
-            android:text="Ubiació Wagaya"
+            android:text="Ubicació Wagaya"
             android:textColor="@android:color/white"
             android:textSize="12dp" />
 
@@ -285,7 +285,7 @@
             android:layout_below="@+id/solNaixentTelef"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/solNaixentMap"
-            android:text="Ubiació Sol Naixent"
+            android:text="Ubicació Sol Naixent"
             android:textColor="@android:color/white"
             android:textSize="12dp" />
 
@@ -377,7 +377,7 @@
             android:layout_below="@+id/nuevoPekinTelef"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/nuevoPekinMap"
-            android:text="Ubiació Nuevo Pekin"
+            android:text="Ubicació Nuevo Pekin"
             android:textColor="@android:color/white"
             android:textSize="12dp" />
 
