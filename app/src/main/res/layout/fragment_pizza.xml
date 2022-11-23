@@ -101,15 +101,15 @@
             android:id="@+id/elitalianotitle"/>
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:id="@+id/elitalianoWeb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="WEB: https://www.ubereats.com/es/store/el-italiano/9Jy-zenzST2WE4p-qaSYlA"
-            android:fontFamily="monospace"
-            android:textSize="10dp"
-            android:id="@+id/elitalianoWeb"
+            android:layout_below="@+id/elitalianotitle"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/elitalianoImagen"
-            android:layout_below="@+id/elitalianotitle"/>
+            android:fontFamily="monospace"
+            android:text="WEB: https://www.ubereats.com/es/store/el-italiano/9Jy-zenzST2WE4p-qaSYlA"
+            android:textSize="10dp" />
         <TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"

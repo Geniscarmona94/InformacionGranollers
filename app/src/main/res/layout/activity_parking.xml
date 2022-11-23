@@ -11,7 +11,15 @@
     tools:context=".parking"
     android:orientation="vertical"
     >
-
+    <TextView
+        android:id="@+id/parking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Parquing"
+        android:textSize="40sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"/>
     <RelativeLayout
 
         android:layout_width="match_parent"

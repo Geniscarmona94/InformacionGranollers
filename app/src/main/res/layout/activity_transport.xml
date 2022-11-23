@@ -1,9 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".transport">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".transport"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/transporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Transporte"
+            android:textSize="40sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btAutobuses"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="Autobuses"/>
+            <Button
+                android:id="@+id/btTrenes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:text="Trenes"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+            <ImageView
+                android:id="@+id/estacionBusesImagen"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/estacionautobuses" />
+
+            <TextView
+                android:id="@+id/estacionBusestitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/estacionBusesImagen"
+                android:fontFamily="monospace"
+                android:text="Estació d'Autobusos"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/estacionBusesTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionBusestitle"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/estacionBusesImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconotelefono" />
+
+            <TextView
+                android:id="@+id/estacionBusesTelefString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionBusestitle"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/estacionBusesTelef"
+                android:text="Telèfon estació d'autobusos"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/estacionBusesMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionBusesTelef"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/estacionBusesImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion"
+                android:text="Av. del Parc s/n" />
+
+            <TextView
+                android:id="@+id/estacionBusesMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionBusesTelef"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/estacionBusesMap"
+                android:text="Ubicació estació d'autobusos"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/estacionCentTrenImagen"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/granollerscenter" />
+
+            <TextView
+                android:id="@+id/estacionCentTrentitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/estacionCentTrenImagen"
+                android:fontFamily="monospace"
+                android:text="Estació de tren
+                (Granollers Centre)"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/estacionCentTrenTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionCentTrentitle"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/estacionCentTrenImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconotelefono"/>
+
+            <TextView
+                android:id="@+id/estacionCentTelefString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionCentTrentitle"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/estacionCentTrenTelef"
+                android:text="Telèfon estació de trens (Granollers Centre)"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/estacionCentTrenMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionCentTrenTelef"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/estacionCentTrenImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion"
+                android:text="Pl. Serrat i Bonastre, 5"/>
+
+            <TextView
+                android:id="@+id/estacionCentTrenMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionCentTrenTelef"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/estacionCentTrenMap"
+                android:text="Ubicació estació de trens (Granollers Centre)"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/estacionCanoTrenImagen"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/granollerscanovelles" />
+
+            <TextView
+                android:id="@+id/estacionCanoTrentitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/estacionCanoTrenImagen"
+                android:fontFamily="monospace"
+                android:text="Estació de tren
+                (Granollers Canovelles)"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/estacionCanoTrenTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionCanoTrentitle"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/estacionCanoTrenImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconotelefono"/>
+
+            <TextView
+                android:id="@+id/estacionCanoTrenTelefString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionCanoTrentitle"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/estacionCanoTrenTelef"
+                android:text="Telèfon estació de trens (Granollers Canovelles)"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/estacionCanoTrenMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionCanoTrenTelef"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/estacionCanoTrenImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion"
+                android:text="C. Joan Maragall, 6" />
+
+            <TextView
+                android:id="@+id/estacionCanoTrenMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionCanoTrenTelef"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/estacionCanoTrenMap"
+                android:text="Ubicació estació de trens (Granollers Canovelles)"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/estacionNordTrenImagen"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/granollersnord" />
+
+            <TextView
+                android:id="@+id/estacionNordTrentitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/estacionNordTrenImagen"
+                android:fontFamily="monospace"
+                android:text="Estació de tren
+                (Granollers Nord - Les Franqueses)"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/estacionNordTrenTelef"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionNordTrentitle"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/estacionNordTrenImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconotelefono"/>
+
+            <TextView
+                android:id="@+id/estacionNordTrenTelefString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionNordTrentitle"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/estacionNordTrenTelef"
+                android:text="Telèfon estació de trens (Granollers Nord - Les Franqueses)"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/estacionNordTrenMap"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/estacionNordTrenTelef"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/estacionNordTrenImagen"
+                android:fontFamily="monospace"
+                android:src="@drawable/iconoubicacion"
+                android:text="Plaça d'Espanya, cantonada amb c. d'Aragó"/>
+
+            <TextView
+                android:id="@+id/estacionNordTrenMapString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estacionNordTrenTelef"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@id/estacionNordTrenMap"
+                android:text="Ubicació estació de trens (Granollers Nord - Les Franqueses)"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

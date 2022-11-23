@@ -14,25 +14,35 @@
         android:theme="@style/Theme.MaterialComponents.Bridge"
         tools:targetApi="31">
         <activity
+            android:name=".trenes"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".autobuses"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".transport"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".parking"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity_business"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".restaruants_activities"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.example.informaciongranollers.MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -49,7 +49,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/aduhoImagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconoweb"/>
+                android:src="@drawable/iconoweb" />
 
             <TextView
                 android:id="@+id/aduhoWebString"
@@ -70,7 +70,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/aduhoImagen"
                 android:fontFamily="monospace"
-                android:src="@drawable/iconotelefono"/>
+                android:src="@drawable/iconotelefono" />
 
             <TextView
                 android:id="@+id/aduhoTelefString"

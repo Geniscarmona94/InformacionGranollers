@@ -25,22 +25,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Italiano"
-            android:icon="@drawable/ic_action_pizza"
             />
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabChino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Asiatico"
-            android:icon="@drawable/ic_action_chino"
             />
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabFastFood"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FASTFOOD"
-            android:icon="@drawable/ic_action_burger"
-
             />
     </com.google.android.material.tabs.TabLayout>
     <androidx.viewpager.widget.ViewPager
