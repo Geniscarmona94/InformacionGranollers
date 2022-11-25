@@ -17,10 +17,10 @@ public class transport extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transport);
 
-        Button btAutobuses = findViewById(R.id.btAutobuses);
-        btAutobuses.setOnClickListener(this);
-        Button btTrenes = findViewById(R.id.btTrenes);
-        btTrenes.setOnClickListener(this);
+        ImageView bus = findViewById(R.id.bus);
+        bus.setOnClickListener(this);
+        ImageView trens = findViewById(R.id.trens);
+        trens.setOnClickListener(this);
 
         ImageView estacionBusesTelef = findViewById(R.id.estacionBusesTelef);
         estacionBusesTelef.setOnClickListener(this);
@@ -44,13 +44,12 @@ public class transport extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
-        Button a = (Button) view;
         ImageView b = (ImageView) view;
 
-        if(a.getId() == R.id.btAutobuses) {
+        if(b.getId() == R.id.bus) {
             Intent intentBoton = new Intent(this, autobuses.class);
             startActivity(intentBoton);
-        }else if(a.getId() == R.id.btTrenes){
+        }else if(b.getId() == R.id.trens){
             Intent intentBoton = new Intent(this, trenes.class);
             startActivity(intentBoton);
         }else if (b.getId() == R.id.estacionBusesTelef) {

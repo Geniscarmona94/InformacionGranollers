@@ -20,26 +20,62 @@
             android:textSize="40sp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"/>
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/btAutobuses"
-                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:text="Autobuses"/>
-            <Button
-                android:id="@+id/btTrenes"
-                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/busestrenes">
+
+                <ImageView
+                    android:id="@+id/bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/bus"
+                    />
+                <ImageView
+                    android:id="@+id/trens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/tren"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginRight="10dp"
-                android:text="Trenes"/>
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:layout_below="@id/busestrenes"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Horaris Autobusos"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Horaris Trens"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"

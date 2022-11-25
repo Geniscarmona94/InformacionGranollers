@@ -16,12 +16,13 @@
         <activity
             android:name=".trenes"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"/>
+            android:parentActivityName=".transport"
+            android:screenOrientation="portrait"
+            android:label=""/>
         <activity
             android:name=".autobuses"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".transport"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".transport"
