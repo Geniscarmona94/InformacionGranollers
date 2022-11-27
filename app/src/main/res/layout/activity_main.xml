@@ -8,16 +8,16 @@
     >
 
 
-   <TextView
-       android:layout_marginTop="10dp"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="@string/benvinguda"
-       android:id="@+id/benvinguda"
-       android:textSize="30dp"
-       android:gravity="center"
+    <TextView
+        android:id="@+id/benvinguda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/benvinguda"
+        android:textSize="30dp"
 
-       />
+        />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,8 +31,11 @@
             android:id="@+id/imgRestaurants"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/restaurants"
-            android:layout_margin="10dp"/>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/restaurants" />
 
         <ImageButton
             android:id="@+id/imgBussines"
@@ -48,9 +51,12 @@
             android:id="@+id/imgParking"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_toRightOf="@id/imgRestaurants"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
 
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/imgRestaurants"
             android:src="@drawable/parking" />
 
         <ImageButton
