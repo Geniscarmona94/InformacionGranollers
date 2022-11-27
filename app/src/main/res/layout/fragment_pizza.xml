@@ -38,7 +38,70 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/lamezzalunaImagen"
             android:id="@+id/lamezzalunatitle"/>
+        <ImageView
+            android:id="@+id/lamezzalunaWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/lamezzalunatitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/lamezzalunaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/lamezzalunaWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lamezzalunatitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/lamezzalunaWeb"
+            android:text="Web La Mezza Luna"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/lamezzalunaTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/lamezzalunaWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/lamezzalunaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/lamezzalunaTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lamezzalunaWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/lamezzalunaTelef"
+            android:text="Telèfon La Mezza Luna"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/lamezzalunaMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iconoubicacion"
+            android:fontFamily="monospace"
+            android:layout_toRightOf="@id/lamezzalunaImagen"
+            android:layout_below="@+id/lamezzalunaTelef"
+            />
+
+        <TextView
+            android:id="@+id/lamezzalunaMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lamezzalunaTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/lamezzalunaMap"
+            android:text="Ubicació La Mezza Luna"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <!--<TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +130,7 @@
             android:textSize="10dp"
             android:id="@+id/atarasiMap"
             android:layout_toRightOf="@id/lamezzalunaImagen"
-            android:layout_below="@+id/lamezzalunaTelef"/>
+            android:layout_below="@+id/lamezzalunaTelef"/>-->
 
     </RelativeLayout>
     <RelativeLayout
@@ -99,8 +162,70 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/elitalianoImagen"
             android:id="@+id/elitalianotitle"/>
+        <ImageView
+            android:id="@+id/elitalianoWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/elitalianotitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/elitalianoImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
 
         <TextView
+            android:id="@+id/elitalianoWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elitalianotitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/elitalianoWeb"
+            android:text="Web El Italiano"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/elitalianoTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/elitalianoWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/elitalianoImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/elitalianoTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elitalianoWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/elitalianoTelef"
+            android:text="Telèfon El Italiano"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/elitalianoMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iconoubicacion"
+            android:fontFamily="monospace"
+            android:layout_toRightOf="@id/elitalianoImagen"
+            android:layout_below="@+id/elitalianoTelef"
+            />
+
+        <TextView
+            android:id="@+id/elitalianoMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elitalianoTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/elitalianoMap"
+            android:text="Ubicació El Italiano"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+       <!-- <TextView
             android:id="@+id/elitalianoWeb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -129,7 +254,7 @@
             android:textSize="10dp"
             android:id="@+id/elitalianoMap"
             android:layout_toRightOf="@id/elitalianoImagen"
-            android:layout_below="@+id/elitalianoTelef"/>
+            android:layout_below="@+id/elitalianoTelef"/>-->
 
     </RelativeLayout>
     <RelativeLayout
@@ -161,7 +286,70 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/ilsaporeImagen"
             android:id="@+id/ilsaporetitle"/>
+        <ImageView
+            android:id="@+id/ilsaporeWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ilsaporetitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ilsaporeImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/ilsaporeWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ilsaporetitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ilsaporeWeb"
+            android:text="Web Il Sapore"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/ilsaporeTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ilsaporeWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ilsaporeImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/ilsaporeTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ilsaporeWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ilsaporeTelef"
+            android:text="Telèfon Il Sapore"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/ilsaporeMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iconoubicacion"
+            android:fontFamily="monospace"
+            android:layout_toRightOf="@id/ilsaporeImagen"
+            android:layout_below="@+id/ilsaporeTelef"
+            />
+
+        <TextView
+            android:id="@+id/ilsaporeMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ilsaporeTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ilsaporeMap"
+            android:text="Ubicació Il Sapore"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <!--<TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -190,7 +378,7 @@
             android:textSize="10dp"
             android:id="@+id/ilsaporeMap"
             android:layout_toRightOf="@id/ilsaporeImagen"
-            android:layout_below="@+id/ilsaporeTelef"/>
+            android:layout_below="@+id/ilsaporeTelef"/>-->
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="10dp"
@@ -221,7 +409,70 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/tagliatellaImagen"
             android:id="@+id/tagliatellatitle"/>
+        <ImageView
+            android:id="@+id/tagliatellaWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tagliatellatitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tagliatellaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/tagliatellaWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagliatellatitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tagliatellaWeb"
+            android:text="Web tagliatella"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/tagliatellaTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tagliatellaWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tagliatellaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/tagliatellaTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagliatellaWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tagliatellaTelef"
+            android:text="Telèfon tagliatella"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/tagliatellaMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iconoubicacion"
+            android:fontFamily="monospace"
+            android:layout_toRightOf="@id/tagliatellaImagen"
+            android:layout_below="@+id/tagliatellaTelef"
+            />
+
+        <TextView
+            android:id="@+id/tagliatellaMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagliatellaTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tagliatellaMap"
+            android:text="Ubicació tagliatella"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <!--<TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -250,7 +501,7 @@
             android:textSize="10dp"
             android:id="@+id/tagliatellaMap"
             android:layout_toRightOf="@id/tagliatellaImagen"
-            android:layout_below="@+id/taglietellaTelef"/>
+            android:layout_below="@+id/taglietellaTelef"/>-->
     </RelativeLayout>
 
 </LinearLayout>
