@@ -16,26 +16,36 @@
             android:id="@+id/titultrens"
             android:textSize="30dp"
             android:gravity="center" />
+
         <RelativeLayout
             android:id="@+id/granollersCentre"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/titultrens"
             android:gravity="center"
-            >
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
             <TextView
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
+                android:id="@+id/granollersCentreTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:text="Horaris lineas Granollers Centre:"
-                android:id="@+id/granollersCentreTitle"
                 android:textSize="25dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:orientation="horizontal"
-                android:layout_below="@+id/granollersCentreTitle">
+                android:layout_below="@+id/granollersCentreTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/r2"
                     android:layout_width="match_parent"
@@ -44,9 +54,9 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/r2"
                     android:layout_weight="1"
-                    />
+                    android:src="@drawable/r2" />
+
                 <ImageView
                     android:id="@+id/r8"
                     android:layout_width="match_parent"
@@ -55,8 +65,9 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/r8"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:src="@drawable/r8" />
+
                 <ImageView
                     android:id="@+id/r11"
                     android:layout_width="match_parent"
@@ -65,30 +76,36 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/r11"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:src="@drawable/r11" />
             </LinearLayout>
         </RelativeLayout>
+
         <RelativeLayout
             android:id="@+id/granollersCanovelles"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/granollersCentre"
             android:gravity="center"
-            >
+            android:layout_marginBottom="10dp">
+
             <TextView
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
+                android:id="@+id/granollersCanovellesTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:text="Horaris lineas Granollers Canovelles:"
-                android:id="@+id/granollersCanovellesTitle"
                 android:textSize="25dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:orientation="horizontal"
-                android:layout_below="@+id/granollersCanovellesTitle">
+                android:layout_below="@+id/granollersCanovellesTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/r3"
                     android:layout_width="match_parent"
@@ -97,8 +114,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/r3"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:src="@drawable/r3" />
             </LinearLayout>
         </RelativeLayout>
         <RelativeLayout
@@ -107,6 +124,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/granollersCanovelles"
             android:gravity="center"
+
             >
             <TextView
                 android:id="@+id/granollersNordTitle"
@@ -120,7 +138,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:orientation="horizontal"
-                android:layout_below="@+id/granollersNordTitle">
+                android:layout_below="@+id/granollersNordTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
                 <ImageView
                     android:id="@+id/r2Nord"
@@ -135,5 +155,4 @@
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
-
 </ScrollView>
