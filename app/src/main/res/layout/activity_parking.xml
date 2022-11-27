@@ -48,7 +48,69 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/elsotImagen"
             android:id="@+id/elsottitle"/>
+        <ImageView
+            android:id="@+id/elsotWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/elsottitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/elsotImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/elsotWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elsottitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/elsotWeb"
+            android:text="Web El Sot"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/elsotTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/elsotWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/elsotImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/elsotTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elsotWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/elsotTelef"
+            android:text="Telèfon El sot"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/elsotMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/elsotTelef"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/elsotImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion"/>
+
+        <TextView
+            android:id="@+id/elsotMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elsotTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/elsotMap"
+            android:text="Ubicació El sot"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+       <!-- <TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +129,7 @@
             android:textSize="10dp"
             android:id="@+id/elsotMap"
             android:layout_toRightOf="@id/elsotImagen"
-            android:layout_below="@+id/elsotTelef"/>
+            android:layout_below="@+id/elsotTelef"/>-->
 
     </RelativeLayout>
     <RelativeLayout
@@ -99,7 +161,69 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/coronaImagen"
             android:id="@+id/coronaTitle"/>
+        <ImageView
+            android:id="@+id/coronaWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/coronaTitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/coronaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/coronaWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coronaTitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/coronaWeb"
+            android:text="Web Corona"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/coronaTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/coronaWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/coronaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/coronaTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coronaWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/coronaTelef"
+            android:text="Telèfon Corona"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/coronaMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/coronaTelef"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/coronaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion"/>
+
+        <TextView
+            android:id="@+id/coronaMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coronaTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/coronaMap"
+            android:text="Ubicació Corona"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <!--<TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -118,7 +242,7 @@
             android:textSize="10dp"
             android:id="@+id/coronaMap"
             android:layout_toRightOf="@id/coronaImagen"
-            android:layout_below="@+id/coronaTelef"/>
+            android:layout_below="@+id/coronaTelef"/>-->
 
     </RelativeLayout>
     <RelativeLayout
@@ -150,7 +274,69 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/ateneaImagen"
             android:id="@+id/ateneatitle"/>
+        <ImageView
+            android:id="@+id/ateneaWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ateneatitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ateneaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/ateneaWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ateneatitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ateneaWeb"
+            android:text="Web Atenea"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/ateneaTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ateneaWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ateneaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/ateneaTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ateneaWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ateneaTelef"
+            android:text="Telèfon Atenea"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/ateneaMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ateneaTelef"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ateneaImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion"/>
+
+        <TextView
+            android:id="@+id/ateneaMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ateneaTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ateneaMap"
+            android:text="Ubicació Atenea"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <!--<TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,7 +355,7 @@
             android:textSize="10dp"
             android:id="@+id/kfcMap"
             android:layout_toRightOf="@id/ateneaImagen"
-            android:layout_below="@+id/ateneaTelef"/>
+            android:layout_below="@+id/ateneaTelef"/>-->
     </RelativeLayout>
 
 </LinearLayout>

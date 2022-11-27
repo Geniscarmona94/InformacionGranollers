@@ -37,7 +37,69 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/mcdonalsImagen"
             android:id="@+id/mcdonalstitle"/>
+        <ImageView
+            android:id="@+id/mcdonalsWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/mcdonalstitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/mcdonalsImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/mcdonalsWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mcdonalstitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/mcdonalsWeb"
+            android:text="Web mcdonals"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/mcdonalsTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/mcdonalsWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/mcdonalsImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/mcdonalsTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mcdonalsWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/mcdonalsTelef"
+            android:text="Telèfon mcdonals"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/mcdonalsMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/mcdonalsTelef"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/mcdonalsImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion"/>
+
+        <TextView
+            android:id="@+id/mcdonalsMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mcdonalsTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/mcdonalsMap"
+            android:text="Ubicació mcdonals"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <!--<TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,7 +128,7 @@
             android:textSize="10dp"
             android:id="@+id/mcdonalsMap"
             android:layout_toRightOf="@id/mcdonalsImagen"
-            android:layout_below="@+id/mcdonalsTelef"/>
+            android:layout_below="@+id/mcdonalsTelef"/>-->
 
     </RelativeLayout>
     <RelativeLayout
@@ -98,7 +160,69 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/burgerImagen"
             android:id="@+id/burgertitle"/>
+        <ImageView
+            android:id="@+id/burgerWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/burgertitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/burgerImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/burgerWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/burgertitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/burgerWeb"
+            android:text="Web burger"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/burgerTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/burgerWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/burgerImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/burgerTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/burgerWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/burgerTelef"
+            android:text="Telèfon burger"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/burgerMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/burgerTelef"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/burgerImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion"/>
+
+        <TextView
+            android:id="@+id/burgerMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/burgerTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/burgerMap"
+            android:text="Ubicació burger"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+       <!-- <TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -127,7 +251,7 @@
             android:textSize="10dp"
             android:id="@+id/burgerMap"
             android:layout_toRightOf="@id/burgerImagen"
-            android:layout_below="@+id/burgerTelef"/>
+            android:layout_below="@+id/burgerTelef"/>-->
 
     </RelativeLayout>
     <RelativeLayout
@@ -159,7 +283,69 @@
             android:textSize="22dp"
             android:layout_toRightOf="@+id/kfcImagen"
             android:id="@+id/kfctitle"/>
+        <ImageView
+            android:id="@+id/kfcWeb"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/kfctitle"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/kfcImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoweb"/>
+
         <TextView
+            android:id="@+id/kfcWebString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kfctitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/kfcWeb"
+            android:text="Web kfc"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/kfcTelef"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/kfcWeb"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/kfcImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconotelefono"/>
+
+        <TextView
+            android:id="@+id/kfcTelefString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kfcWeb"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/kfcTelef"
+            android:text="Telèfon kfc"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/kfcMap"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/kfcTelef"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/kfcImagen"
+            android:fontFamily="monospace"
+            android:src="@drawable/iconoubicacion"/>
+
+        <TextView
+            android:id="@+id/kfcMapString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kfcTelef"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/kfcMap"
+            android:text="Ubicació kfc"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <!--<TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -188,7 +374,7 @@
             android:textSize="10dp"
             android:id="@+id/kfcMap"
             android:layout_toRightOf="@id/kfcImagen"
-            android:layout_below="@+id/kfcTelef"/>
+            android:layout_below="@+id/kfcTelef"/>-->
     </RelativeLayout>
 
 
