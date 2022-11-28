@@ -37,7 +37,7 @@ public class autobuses extends AppCompatActivity implements View.OnClickListener
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View view){
         ImageView b = (ImageView) view;
 
         if (b.getId() == R.id.transgranImagen){
