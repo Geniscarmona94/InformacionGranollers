@@ -53,34 +53,34 @@ public class transport extends AppCompatActivity implements View.OnClickListener
             Intent intentBoton = new Intent(this, trenes.class);
             startActivity(intentBoton);
         }else if (b.getId() == R.id.estacionBusesTelef) {
-            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 93 870 78 60")); //.class és l'arxiu java compilat
+            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 93 870 78 60"));
             startActivity(intentTelef);
         }else if(b.getId() == R.id.estacionCentTrenTelef)
         {
-            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 900 41 00 41"));  //.class és l'arxiu java compilat
+            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 900 41 00 41"));
             startActivity(intentTelef);
         }else if(b.getId() == R.id.estacionCanoTrenTelef)
         {
-            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 900 41 00 41"));  //.class és l'arxiu java compilat
+            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 900 41 00 41"));
             startActivity(intentTelef);
         }else if(b.getId() == R.id.estacionNordTrenTelef)
         {
-            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 900 41 00 41"));  //.class és l'arxiu java compilat
+            Intent intentTelef = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 900 41 00 41"));
             startActivity(intentTelef);
         }else if (b.getId() == R.id.estacionBusesMap) {
-            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: ")); //.class és l'arxiu java compilat
+            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: 41.606654657069654, 2.2912180689564505"));
             startActivity(intentMap);
         } else if(b.getId() == R.id.estacionCentTrenMap)
         {
-            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: "));  //.class és l'arxiu java compilat
+            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: 41.59979410665576, 2.291395359465632"));
             startActivity(intentMap);
         }else if(b.getId() == R.id.estacionCanoTrenMap)
         {
-            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: "));  //.class és l'arxiu java compilat
+            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: 41.611538751546306, 2.276889974346129"));
             startActivity(intentMap);
         }else if(b.getId() == R.id.estacionNordTrenMap)
         {
-            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: "));  //.class és l'arxiu java compilat
+            Intent intentMap = new Intent(Intent.ACTION_DIAL, Uri.parse("geo: 41.61715902938536, 2.294409924553507"));
             startActivity(intentMap);
         }
     }

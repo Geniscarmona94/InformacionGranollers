@@ -108,7 +108,7 @@ public class autoescuela extends Fragment implements View.OnClickListener {
             Intent telfIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 678 63 15 64"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.liceuMap) {
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.609276800263785, 2.283496166881044"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.hoyvoyWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://es.hoy-voy.com"));
@@ -117,7 +117,7 @@ public class autoescuela extends Fragment implements View.OnClickListener {
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 46 77 22"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.hoyvoyMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.605223035744366, 2.2907168689564257"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.soy18Web) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.soy18.com/"));
@@ -126,7 +126,7 @@ public class autoescuela extends Fragment implements View.OnClickListener {
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 932 20 70 16"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.soy18Map){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.60266079261813, 2.2876122419672154"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.autoescolaGranollersWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.autoescolagranollers.com/"));
@@ -135,7 +135,7 @@ public class autoescuela extends Fragment implements View.OnClickListener {
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 79 48 27"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.autoescolaGranollersMap) {
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.60620458793633, 2.29037610981024"));
             startActivity(mapIntent);
         }
     }

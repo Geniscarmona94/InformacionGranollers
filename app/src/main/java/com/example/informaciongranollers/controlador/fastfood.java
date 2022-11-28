@@ -122,7 +122,7 @@ public class fastfood extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 79 51 07"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.kfcMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.611788941477066, 2.3026851696495476"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.burgerWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.burgerking.es/"));
@@ -131,7 +131,7 @@ public class fastfood extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 676 64 51 26"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.burgerMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.59720900376729, 2.282367531234525"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.mcdonalsWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://mcdonalds.es/"));
@@ -140,7 +140,7 @@ public class fastfood extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 615 73 65 34"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.mcdonalsMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.5972930503227, 2.2831401935694178"));
             startActivity(mapIntent);
         }
     }

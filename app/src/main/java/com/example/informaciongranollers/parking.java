@@ -63,7 +63,7 @@ public class parking extends AppCompatActivity implements View.OnClickListener {
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 606 690"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.coronaMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.604601656814424, 2.2895858689563826"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.elsotWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.es/"));
@@ -72,7 +72,7 @@ public class parking extends AppCompatActivity implements View.OnClickListener {
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 709 150"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.elsotMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.607911235207965, 2.2903875689565143"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.ateneaWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.es/"));
@@ -81,7 +81,7 @@ public class parking extends AppCompatActivity implements View.OnClickListener {
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 618 463 836"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.ateneaMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.60019082049771, 2.2881570622500944"));
             startActivity(mapIntent);
         }
     }

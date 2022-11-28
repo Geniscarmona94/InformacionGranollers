@@ -118,7 +118,7 @@ public class chino extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 689 87 56 85"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.atarasiMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.60988736470779, 2.2893908357467994"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.wagayaWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.wagaya.es/"));
@@ -127,7 +127,7 @@ public class chino extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 931 58 34 81"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.wagayaMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.61023891611194, 2.2909501069138"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.solNaixentWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://solnaixent.es/"));
@@ -136,7 +136,7 @@ public class chino extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 79 51 07"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.solNaixentMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.604995870292925, 2.288089497791525"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.nuevoPekinWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.just-eat.es/restaurants-chinonuevopekin/menu"));
@@ -145,7 +145,7 @@ public class chino extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 46 76 70"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.nuevoPekinMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.619798184704635, 2.2806159977920264"));
             startActivity(mapIntent);
         }
     }

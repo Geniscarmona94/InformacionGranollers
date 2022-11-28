@@ -92,7 +92,7 @@ public class peluqueria extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel: 938 70 14 87"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.aduhoMap) {
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.61003629560505, 2.2832452496669435")); //no se como poner la ubicación en latitud y longuitud
             startActivity(mapIntent);
         }else if (view.getId() == R.id.elsalonWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://elsalon.netlify.app/"));
@@ -101,7 +101,7 @@ public class peluqueria extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 44 33 39"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.elsalonMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.613504934180405, 2.290713253387624")); //no se como poner la ubicación en latitud y longuitud
             startActivity(mapIntent);
         }else if (view.getId() == R.id.urbanbeautyWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.urbanbeautygranollers.com/"));
@@ -110,7 +110,7 @@ public class peluqueria extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 79 31 75"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.urbanbeautyMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.60626226815018, 2.289762097791617")); //no se como poner la ubicación en latitud y longuitud
             startActivity(mapIntent);
         }
     }

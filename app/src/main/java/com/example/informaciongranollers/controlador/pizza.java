@@ -134,7 +134,7 @@ public class pizza extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 79 52 23"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.lamezzalunaMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.60315189589803, 2.2880825842969283"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.tagliatellaWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.latagliatella.es/"));
@@ -143,7 +143,7 @@ public class pizza extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 60 48 99"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.tagliatellaMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.6113037323536, 2.2897857702923354"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.elitalianoWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ubereats.com/es/store/el-italiano/9Jy-zenzST2WE4p-qaSYlA"));
@@ -152,7 +152,7 @@ public class pizza extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 931 29 63 46"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.elitalianoMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.60604371256028, 2.2879591831710115"));
             startActivity(mapIntent);
         }else if (view.getId() == R.id.ilsaporeWeb) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(" http://www.ilsaporeitaliano.es/"));
@@ -161,7 +161,7 @@ public class pizza extends Fragment implements View.OnClickListener{
             Intent telfIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel: 938 40 15 32"));
             startActivity(telfIntent);
         }else if (view.getId() == R.id.ilsaporeMap){
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: ")); //no se como poner la ubicación en latitud y longuitud
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 41.611625443921305, 2.2864737996377964"));
             startActivity(mapIntent);
         }
     }
